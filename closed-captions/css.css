@@ -37,6 +37,7 @@ You probably want to change the styling.
 	opacity: 1;
 	transition: 0s;
 	font-weight: 200;
+	color: blue;
 }
 .p0.on span:nth-of-type(2) {
 	opacity: 1;
