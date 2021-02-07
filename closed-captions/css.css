@@ -108,6 +108,10 @@ Sounds.
 	background: blue;
 }
 
+.sound2 {
+	background: green;
+}
+
 iframe {
 	transition: 1s;
 }
