@@ -1,4 +1,4 @@
-body { 
+ body { 
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -16,6 +16,9 @@ Show them when they receive the class 'on'
 Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
+
+
+
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
@@ -114,13 +117,50 @@ You probably want to change the styling.
 	
 }
 
+.p3.on span:nth-of-type(2) {
+	font-family: "Brenner Sans Condensed";
+font-style: Italic;
+font-weight: 600;
+font-size: 2em;
+color: red;
+}
+
+.p4.on span:nth-of-type(4), .p4.on span:nth-of-type(7), .p5.on span:nth-of-type(3) {
+font-family: "Brenner Sans Condensed";
+font-style: Italic;
+font-weight: 400;
+letter-spacing: -0.5px;
+font-size: 0.9em;
+}
+
+.p9.on, .p12.on, .p15.on, .p18.on {
+	font-family: "Brenner Sans Condensed";
+font-style: Italic;
+font-weight: 400;
+letter-spacing: -0.5px;
+font-size: 0.9em;
+margin-top: 25px;
+}
+
+.p4.on span:nth-of-type(5), .p5.on span:nth-of-type(1), .p5.on span:nth-of-type(4), .p20.on, .p23.on, .p26.on, 
+.p29.on, .p31.on, .p34.on, .p37.on {
+font-family: "Brenner Sans Condensed";
+font-style: Italic;
+font-weight: 400;
+letter-spacing: -2px;
+font-size: 1.3em;
+}
+
+
 
 .p6 span {
 	font-family: "Brenner Sans Condensed";
-	font-style: Italic;
-	font-weight: 800;
-	font-size: 30px;
+font-style: Italic;
+font-weight: 600;
+	font-size: 20px;
 	color: red;	
+	letter-spacing: -1px;
+
 }
 
 
@@ -137,20 +177,22 @@ Sounds.
 
 
 .voice1 {
-	font-family: "Brenner Sans";
-	font-style: Italic;
-	font-size: 2rem;
-	font-weight: 800;
+	font-family: "Brenner Mono";
+    font-weight: 600;
+    font-size: 1.5em;
 	text-transform: uppercase;
 
-	text-shadow: 0.05em 0 0 rgba(225, 0, 0, 0.75),
-    -0.025em -0.05em 0 rgba(0, 225, 0, 0.75),
-    0.025em 0.05em 0 rgba(0, 0, 225, 0.75);	
+	text-shadow: 0.1em 0 0 rgba(225, 0, 0, 0.75),
+    -0.075em -0.1em 0 rgba(0, 225, 0, 0.75),
+    0.075em 0.1em 0 rgba(0, 0, 225, 0.75);	
 
 }
 
 .voice2 {
-	font-size: 2rem;
+	font-family: "Brenner Sans";
+    font-style: Normal;
+    font-weight: 400;
+	font-size: 1.2em;
 }
 
 iframe {
@@ -181,9 +223,9 @@ iframe {
 }
 @keyframes blinkBackground{
 	0%		{ background-color: #000000;}
-	25%		{ background-color: #310000;}
+	25%		{ background-color: #AE0000;}
 	50%		{ background-color: #000000;}
-	75%		{ background-color: #310000;}
+	75%		{ background-color: #AE0000;}
 	100%	{ background-color: #000000;}
 }
 
@@ -194,7 +236,7 @@ iframe {
 
 .sound1 iframe  {
 
-animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+animation: shake 0.82s cubic-bezier(.40,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
@@ -204,18 +246,42 @@ animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
 
 @keyframes shake {
 	10%, 90% {
-	  transform: translate3d(-1px, 0, 0);
+	  transform: translate3d(-10px, 0, 0);
 	}
 	
 	20%, 80% {
-	  transform: translate3d(2px, 0, 0);
+	  transform: translate3d(11px, 0, 0);
 	}
   
 	30%, 50%, 70% {
-	  transform: translate3d(-6px, 0, 0);
+	  transform: translate3d(-15px, 0, 0);
 	}
   
 	40%, 60% {
-	  transform: translate3d(10px, 0, 0);
+	  transform: translate3d(19px, 0, 0);
 	}
   }
+
+.sound2 {
+	/*background: radial-gradient( #570202, #222222);*/
+	background: linear-gradient(-45deg, #000000, #000000, #570202, #570202);
+	background-size: 400% 400%;
+	animation: gradient 7s ease infinite;
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.sound3 {
+	background: radial-gradient(#222222, #222222)
+}
