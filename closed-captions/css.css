@@ -122,7 +122,7 @@ You probably want to change the styling.
 */
 
 .p3.on span:nth-of-type(2) {
-	font-family: "Brenner Sans Condensed";
+font-family: "Brenner Sans Condensed";
 font-style: Italic;
 font-weight: 600;
 font-size: 2em;
@@ -138,6 +138,15 @@ font-size: 0.9em;
 }
 
 .p9.on, .p12.on, .p15.on, .p18.on {
+	font-family: "Brenner Sans Condensed";
+font-style: Italic;
+font-weight: 400;
+letter-spacing: -0.5px;
+font-size: 0.9em;
+margin-top: 25px;
+}
+
+.p9.off, .p12.off, .p15.off, .p18.off {
 	font-family: "Brenner Sans Condensed";
 font-style: Italic;
 font-weight: 400;
@@ -288,4 +297,15 @@ animation: shake 0.82s cubic-bezier(.40,.07,.19,.97) both;
 
 .sound3 {
 	background: radial-gradient(#222222, #222222)
+}
+
+
+.sound10 iframe{
+    transition: 18s;
+    width: 42%;
+}
+
+.sound11 iframe{
+    transition: 1.5s;
+    width: 50%;
 }
