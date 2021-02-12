@@ -47,12 +47,15 @@ The first paragraph, with extended timing for
 	spoken.
 You probably want to change the styling.
 ********************************************** */
+
+/*
 .p0 span {
 	opacity: 0;
 	font-family: "Brenner Sans";
 	font-style: Italic;
 	
 }
+
 
 .p0.on span:first-of-type {
 	opacity: 1;
@@ -116,6 +119,7 @@ You probably want to change the styling.
 	transition: 0s 3.7s;
 	
 }
+*/
 
 .p3.on span:nth-of-type(2) {
 	font-family: "Brenner Sans Condensed";
