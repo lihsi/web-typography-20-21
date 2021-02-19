@@ -72,8 +72,6 @@ You probably want to change the styling.
 ********************************************** */
 
 .voice1::before {
-	/* content: "Officer K: "; */
-	/* content: url(officerk.png); */
 	content: " ";
 	background-image: url(images/pc.png);
 	background-size: 100% 100%; 
@@ -83,7 +81,7 @@ You probably want to change the styling.
   /*size of your image*/
 	height: 16px;
 	width: 16px;
-	/* margin-right: 10px; */
+	margin-right: 10px; 
 	background-color: transparent;
 	filter: drop-shadow(0 0px 5px rgb(71, 187, 123)); 	
 
@@ -108,8 +106,6 @@ You probably want to change the styling.
 
 
 .voice2::before {
-	/* content: "Officer K: "; */
-	/* content: url(officerk.png); */
 	content: "[ K ] :";
 	margin-right: 10px;
   }
@@ -134,8 +130,6 @@ You probably want to change the styling.
 }
 
 .voice3::before {
-	/* content: "Officer K: "; */
-	/* content: url(officerk.png); */
 	content: "[ Man ] :";
 	margin-right: 10px;
   }
@@ -159,8 +153,6 @@ You probably want to change the styling.
 }
 
 .voice4::before {
-	/* content: "Officer K: "; */
-	/* content: url(officerk.png); */
 	content: "[ Unknown ] :";
 	margin-right: 10px;
 	font-style: italic; 
