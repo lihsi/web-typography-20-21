@@ -53,10 +53,12 @@ captions[37] = ['63.2','63.9'];
 captions[38] = ['63.9','65.2'];
 captions[39] = ['65.2','66.6'];
 	//Why don't you say that three times: "within cells interlinked".
-captions[40] = ['66.6','69.1'];
-
-captions[41] = ['69.1','70.6'];
-captions[42] = ['70.6','72.2'];
+captions[40] = ['66.6','69'];
+    //Within cells interlinked.
+captions[41] = ['69.1','70.5'];
+	//Within cells interlinked.
+captions[42] = ['70.6','72.1'];
+	//Within cells interlinked.
 captions[43] = ['72.2','74.2'];
 	// We're done.
 captions[44] = ['77.1','78.7'];

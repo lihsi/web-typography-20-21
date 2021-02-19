@@ -1,14 +1,3 @@
- body { 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    background-color: #222222;
-	margin-top: 5%;
-	color: white;
-}
-
-
 /* **********************************************
 Basic mechanics
 Hide all paragraphs by default
@@ -17,25 +6,59 @@ Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
 
+.square {
+	height: 50px;
+	width: 50px;
+	/* background-color: #555;*/
+	border: 2px solid #05ff4c8c;
+	opacity: 0.2; 
+	position: absolute;
+    left: 85%;
+    
+  }
 
+  .square2 {
+	height: 50px;
+	width: 50px;
+	border: 2px solid #05ff4c8c;
+	opacity: 0.2; 
+	position: absolute;
+	left: 10%;
+	bottom: 50%;
+    
+  }
 
 #closed-captions p {
 	opacity: 0;
-	transition: .05s;
-	position: absolute;
-	left: 0%;
-	right: 0%;
-	text-align: center;
+    transition: .05s;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
 }
 
 #closed-captions .on {
 	opacity: 1;
-	
+	position: absolute;	
 }
+
 #closed-captions .off {
 	transition: .1s;
 	opacity: 0;
+}
 
+body { 
+	background-color: #222222;
+	background-image: url(images/cyber_green.jpg);
+    background-size: cover;
+}
+
+iframe {
+	transition: 1s;
+    width: 50%;
+    display: block;
+    margin: 50px auto 0;
+	box-shadow: 0 0 40px 4px #30472b71; 	
 }
 
 
@@ -48,135 +71,119 @@ The first paragraph, with extended timing for
 You probably want to change the styling.
 ********************************************** */
 
-/*
-.p0 span {
-	opacity: 0;
-	font-family: "Brenner Sans";
-	font-style: Italic;
+.voice1::before {
+	/* content: "Officer K: "; */
+	/* content: url(officerk.png); */
+	content: " ";
+	background-image: url(images/pc.png);
+	background-size: 100% 100%; 
+	display: inline-block;
 	
+
+  /*size of your image*/
+	height: 16px;
+	width: 16px;
+	/* margin-right: 10px; */
+	background-color: transparent;
+	filter: drop-shadow(0 0px 5px rgb(71, 187, 123)); 	
+
+  }
+
+  .voice1{
+    width: 33%;
+    margin: 20px auto 0;
+    padding: 20px 100px;
+    background:  rgba(17, 46, 30, 0.7);
+    /* box-shadow:  0 0 30px 0 #608a67; */
+    border: 1px solid #005c31; 
+    /* border-radius: 10px; */
+    font-size: 18px;
+    font-family: "brenner mono";
+    /* font-style: italic; */
+    text-shadow: 0 0 10px;
+    text-align: center;
+    color:  #00c92b;
+    z-index: -1;
 }
 
 
-.p0.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-	
-	
-}
-.p0.on span:nth-of-type(2) {
-	opacity: 1;
-	transition: 0s .4s;
-	margin-right: -.25em;
-	
-}
-.p0.on span:nth-of-type(3) {
-	opacity: 1;
-	transition: 0s .5s;
-	margin-right: -.25em;
+.voice2::before {
+	/* content: "Officer K: "; */
+	/* content: url(officerk.png); */
+	content: "[ K ] :";
+	margin-right: 10px;
+  }
 
-}
-.p0.on span:nth-of-type(4) {
-	opacity: 1;
-	transition: 0s .7s;
-	margin-right: -.25em;
-	
-}
-.p0.on span:nth-of-type(5) {
-	opacity: 1;
-	transition: 0s 1.1s;
-	margin-right: -.25em;
-	
-}
-.p0.on span:nth-of-type(6) {
-	opacity: 1;
-	transition: 0s 1.4s;
-	margin-right: -.25em;
-
-}
-.p0.on span:nth-of-type(7) {
-	opacity: 1;
-	transition: 0s 1.7s;
-	margin-right: -.25em;
-	
-}
-.p0.on span:nth-of-type(8) {
-	opacity: 1;
-	transition: 0s 2s;
-	
-}
-.p0.on span:nth-of-type(9) {
-	opacity: 1;
-	transition: 0s 3s;
-	
-}
-.p0.on span:nth-of-type(10) {
-	opacity: 1;
-	transition: 0s 3.2s;
-	
-}
-.p0.on span:nth-of-type(11) {
-	opacity: 1;
-	transition: 0s 3.7s;
-	
-}
-*/
-
-.p3.on span:nth-of-type(2) {
-font-family: "Brenner Sans Condensed";
-font-style: Italic;
-font-weight: 600;
-font-size: 2em;
-color: red;
+.voice2{
+	width: 33%;
+    margin: 20px auto 0;
+    padding: 22px 100px;
+    background: rgba(17, 46, 30, 0.404); 
+    box-shadow:  0 0 20px 0 #00472675; 
+	border: 1px solid #ffffff;
+    /* border-radius: 10px; */
+    font-size: 18px;
+	font-family: "brenner sans";
+	font-weight: 400;
+    /* font-style: italic; */
+    /* text-shadow: 0 0 20px; */
+    text-align: center;
+	color: #ffffffc7;
+	letter-spacing: 0.5px;
+    z-index: -1;
 }
 
-.p4.on span:nth-of-type(4), .p4.on span:nth-of-type(7), .p5.on span:nth-of-type(3) {
-font-family: "Brenner Sans Condensed";
-font-style: Italic;
-font-weight: 400;
-letter-spacing: -0.5px;
-font-size: 0.9em;
+.voice3::before {
+	/* content: "Officer K: "; */
+	/* content: url(officerk.png); */
+	content: "[ Man ] :";
+	margin-right: 10px;
+  }
+
+.voice3 {
+    width: 33%;
+    margin: 30px auto 0;
+    padding: 10px 100px;
+	background: rgba(46, 17, 17, 0.404); 
+    box-shadow:  0 0 20px 0 #47000075; 
+	border: 1px solid #611d1d91;
+    /* border-radius: 10px; */
+    font-size: 18px;
+    font-family: "brenner sans";
+    /* font-style: italic; */
+	/* text-shadow: 0 0 10px; */
+	font-weight: 400;
+    text-align: center;
+    color: #a31d1d;
+    z-index: -1;
 }
 
-.p9.on, .p12.on, .p15.on, .p18.on {
-	font-family: "Brenner Sans Condensed";
-font-style: Italic;
-font-weight: 400;
-letter-spacing: -0.5px;
-font-size: 0.9em;
-margin-top: 25px;
+.voice4::before {
+	/* content: "Officer K: "; */
+	/* content: url(officerk.png); */
+	content: "[ Unknown ] :";
+	margin-right: 10px;
+	font-style: italic; 
+	font-weight: 200;
+  }
+
+.voice4 {
+    width: 33%;
+    margin: 20px auto 0;
+    padding: 20px 100px;
+    background:  rgba(17, 46, 17, 0.7);
+    /* box-shadow:  0 0 30px 0 #608a67; */
+    border: 1px solid #005c08; 
+    /* border-radius: 10px; */
+    font-size: 18px;
+    font-family: "brenner sans";
+	/* font-style: italic; */
+	font-weight: 300;
+    text-shadow: 0 0 15px;
+    text-align: center;
+    color:  #4be41c;
+    z-index: -1;
 }
-
-.p9.off, .p12.off, .p15.off, .p18.off {
-	font-family: "Brenner Sans Condensed";
-font-style: Italic;
-font-weight: 400;
-letter-spacing: -0.5px;
-font-size: 0.9em;
-margin-top: 25px;
-}
-
-.p4.on span:nth-of-type(5), .p5.on span:nth-of-type(1), .p5.on span:nth-of-type(4), .p20.on, .p23.on, .p26.on, 
-.p29.on, .p31.on, .p34.on, .p37.on {
-font-family: "Brenner Sans Condensed";
-font-style: Italic;
-font-weight: 400;
-letter-spacing: -2px;
-font-size: 1.3em;
-
-}
-
-
-
-.p6 span {
-	font-family: "Brenner Sans Condensed";
-font-style: Italic;
-font-weight: 600;
-	font-size: 20px;
-	color: red;	
-	letter-spacing: -1px;
-
-}
-
 
 
 /* **********************************************
@@ -186,126 +193,368 @@ Sounds.
 	a sound starts.
 *********************************************  */
 
-/* The moment the class .sound1 is added to the body, the background is yellow */
 
+.sound1 .square {
+	opacity: 1;
+	animation: shake 0.82s cubic-bezier(.40,.07,.19,.97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+		
+  }
+  
+  @keyframes shake {
+	  10%, 90% {
+		transform: translate3d(-10px, 0, 0);
+	  }
+	  
+	  20%, 80% {
+		transform: translate3d(11px, 0, 0);
+	  }
+	
+	  30%, 50%, 70% {
+		transform: translate3d(-15px, 0, 0);
+	  }
+	
+	  40%, 60% {
+		transform: translate3d(19px, 0, 0);
+	  }
+	}
+  
+	.sound1 .square2{
+		opacity: 1;
+		animation: shake 0.82s cubic-bezier(.40,.07,.19,.97) both;
+		transform: translate3d(0, 0, 0);
+		backface-visibility: hidden;
+		perspective: 1000px;
+			
+	  }
+	  
+	  @keyframes shake {
+		  10%, 90% {
+			transform: translate3d(-10px, 0, 0);
+		  }
+		  
+		  20%, 80% {
+			transform: translate3d(11px, 0, 0);
+		  }
+		
+		  30%, 50%, 70% {
+			transform: translate3d(-15px, 0, 0);
+		  }
+		
+		  40%, 60% {
+			transform: translate3d(19px, 0, 0);
+		  }
+		}
+	  
 
-
-.voice1 {
-	font-family: "Brenner Mono";
-    font-weight: 600;
-    font-size: 1.5em;
-	text-transform: uppercase;
-
-	text-shadow: 0.1em 0 0 rgba(225, 0, 0, 0.75),
-    -0.075em -0.1em 0 rgba(0, 225, 0, 0.75),
-    0.075em 0.1em 0 rgba(0, 0, 225, 0.75);	
-
+.sound2 .square {
+	opacity: 0.2;
 }
 
-.voice2 {
-	font-family: "Brenner Sans";
-    font-style: Normal;
-    font-weight: 400;
-	font-size: 1.2em;
+.sound2 .square2 {
+	opacity: 0.2;
 }
 
-iframe {
-	transition: 1s;
-}
-
-
-
-.sound0 {
-	color: #fff;
-	padding: 10px;
-	border-radius: 5px;
-	animation: blinkingBackground 1s;
-}
-@keyframes blinkingBackground{
-	0%		{ background-color: #000000;}
-	25%		{ background-color: #1d1d1d;}
-	50%		{ background-color: #000000;}
-	75%		{ background-color: #1d1d1d;}
-	100%	{ background-color: #000000;}
-}
-
-.sound1 {
-	color: #fff;
-	padding: 10px;
-	border-radius: 5px;
-	animation: blinkBackground 1s;
-}
-@keyframes blinkBackground{
-	0%		{ background-color: #000000;}
-	25%		{ background-color: #AE0000;}
-	50%		{ background-color: #000000;}
-	75%		{ background-color: #AE0000;}
-	100%	{ background-color: #000000;}
-}
-
-/* The moment the class .sound1 is added to the body, the movie makes a turn */
-
-
-
-
-.sound1 iframe  {
-
-animation: shake 0.82s cubic-bezier(.40,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
+.sound3 .square {
+	opacity: 1;
+	animation: shimmy 1s linear;
+	  animation-direction: alternate;
 	  
 }
+@keyframes shimmy {
+	0% {
+	  transform: translate(0, 0); }
+	 
 
-@keyframes shake {
-	10%, 90% {
-	  transform: translate3d(-10px, 0, 0);
+
+	80% {
+	  transform: translate(-20px, -80px) scale(0.5);   
+	};
+	 
+	}
+  
+
+.sound3 .square2 {
+	opacity: 1;
+	animation: shimmy2 1s linear;
+	  animation-direction: alternate;
+	  
+}
+@keyframes shimmy2 {
+	0% {
+	  transform: translate(0, 0); }
+	 
+
+	80% {
+	  transform: translate(80px, -20px) scale(0.5);   
+	};
+	 
+	}
+
+.sound4 .square {
+opacity: 0.2;
+}
+
+.sound4 .square2 {
+	opacity: 0.2;
+	}
+
+.sound5 .square {
+opacity: 1;
+animation: beep 2s ease-in;
+}
+
+@keyframes beep {
+	40% {
+	  transform: scale(2);    
+	}
+
+	50% {
+		transform: scale(2.5);    
+	  }
+
+	70% {
+		transform: scale(1);    
+	  };
+	 
+	}
+
+	.sound5 .square2 {
+		opacity: 1;
+		animation: beep 2s ease-in;
+		}
+		
+		@keyframes beep {
+			40% {
+			  transform: scale(2);    
+			}
+		
+			50% {
+				transform: scale(2.5);    
+			  }
+			  
+			70% {
+				transform: scale(1);    
+			  };
+			 
+			}
+
+.sound6 .square {
+	opacity: 0.2;
+}
+
+.sound6 .square2 {
+	opacity: 0.2;
+}
+
+.sound7 .square {
+	opacity: 1;
+	animation: beep2 2.5s ease-in;
 	}
 	
-	20%, 80% {
-	  transform: translate3d(11px, 0, 0);
+	@keyframes beep2 {
+		60% {
+		  transform: scale(2);    
+		}
+	
+		61% {
+			transform: scale(2.5);    
+		  }
+	
+		70% {
+			transform: scale(1);    
+		  };
+		 
+}
+
+.sound7 .square2 {
+	opacity: 1;
+	animation: beep2 2.5s ease-in;
 	}
-  
-	30%, 50%, 70% {
-	  transform: translate3d(-15px, 0, 0);
+	
+	@keyframes beep2 {
+		60% {
+		  transform: scale(2);    
+		}
+	
+		61% {
+			transform: scale(2.5);    
+		  }
+	
+		70% {
+			transform: scale(1);    
+		  };
+		 
+}
+
+.sound8 .square {
+	opacity: 0.2;
+}
+
+.sound8 .square2 {
+	opacity: 0.2;
+}
+
+.sound9 .square {
+	opacity: 1;
+	animation: beep3 2.5s ease-in;
 	}
-  
-	40%, 60% {
-	  transform: translate3d(19px, 0, 0);
+	
+	@keyframes beep3 {
+		60% {
+		  transform: scale(2);    
+		}
+	
+		61% {
+			transform: scale(2.5);    
+		  }
+	
+		70% {
+			transform: scale(1);    
+		  };
+		 
+}
+
+.sound9 .square2 {
+	opacity: 1;
+	animation: beep3 2.5s ease-in;
 	}
+	
+	@keyframes beep3 {
+		60% {
+		  transform: scale(2);    
+		}
+	
+		61% {
+			transform: scale(2.5);    
+		  }
+	
+		70% {
+			transform: scale(1);    
+		  };
+		 
+}
+
+.sound10 .square {
+	opacity: 0.2;
+}
+
+.sound10 .square2 {
+	opacity: 0.2;
+}
+
+.sound11 .square{
+	opacity: 1;
+	animation: shaker 0.5s;
+	animation-iteration-count: 83;	 
+}
+
+@keyframes shaker {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-2deg); }
+	20% { transform: translate(-3px, 0px) rotate(2deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(2deg); }
+	50% { transform: translate(-1px, 2px) rotate(-2deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-2deg); }
+	80% { transform: translate(-1px, -1px) rotate(2deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-2deg); }
   }
 
-.sound2 {
-	/*background: radial-gradient( #570202, #222222);*/
-	background: linear-gradient(-45deg, #000000, #000000, #570202, #570202);
-	background-size: 400% 400%;
-	animation: gradient 7s ease infinite;
+  .sound11 .square2{
+	opacity: 1;
+	animation: shaker 0.5s;
+	animation-iteration-count: 83;	 
+}
+
+@keyframes shaker {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-2deg); }
+	20% { transform: translate(-3px, 0px) rotate(2deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(2deg); }
+	50% { transform: translate(-1px, 2px) rotate(-2deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-2deg); }
+	80% { transform: translate(-1px, -1px) rotate(2deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-2deg); }
+  }
+
+ 
+
+  .sound13 {
+	transition: 30s;
+    background-image: url(images/cyber_green_4.jpg);
+    background-size: cover;
+    background-color: black;
+}
+
+.sound14 {
+    background-image: url(images/cyber_green.jpg);
+    background-size: cover;
+    background-color: black;
+}
+
+.sound14 .square {
+	opacity: 0.2;
+}
+
+.sound14 .square2 {
+	opacity: 0.2;
+}
+
+/*
+
+.sound10 {
+	transition: 10s;
+    background-image: url(images/cyber_green.jpg);
+    background-size: cover;
+    background-color: black;
+}
+.sound11 .square {
+	border: 2px solid #05ff4c8c;
+}
+
+
+
+.sound11 {
+	transition: 10s;
+    background-image: url(images/cyber_green_1.jpg);
+    background-size: cover;
+    background-color: black;
+}
+
+
+.sound12 {
+	transition: 10s;
+    background-image: url(images/cyber_green_2.jpg);
+    background-size: cover;
+    background-color: black;
+}
+
+
+.sound13{
+	transition: 10s;
+    background-image: url(images/cyber_green_3.jpg);
+    background-size: cover;
+    background-color: black;
+}
+
+.sound14 {
+	transition: 10s;
+    background-image: url(images/cyber_green_4.jpg);
+    background-size: cover;
+    background-color: black;
+}
+
+.sound16 {
 	
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-.sound3 {
-	background: radial-gradient(#222222, #222222)
-}
-
-
-.sound10 iframe{
-    transition: 25s;
-    width: 42%;
-}
-
-.sound11 iframe{
-    transition: 1.5s;
-    width: 50%;
+    background-image: url(images/cyber_green.jpg);
+    background-size: cover;
+    background-color: black;
 }
