@@ -81,7 +81,6 @@ You probably want to change the styling.
   /*size of your image*/
 	height: 16px;
 	width: 30px;
-	margin-right: 10px; 
 	background-color: transparent;
 	filter: drop-shadow(0 0px 5px rgb(71, 187, 123)); 	
 
