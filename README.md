@@ -45,13 +45,13 @@ In deze fase moest ik er nog even inkomen in het hele programmeren. Ik heb in de
 In de tweede versie heb ik voice1 een glitch gegeven omdat de stem robot/computer achtig overkwam en een blink/shake keyframe toegevoegd aan de video voor een beetje actie. Tijdens de feedback ronde bleek dat de blink zo minimaal was dat deze eigenlijk niet opviel dat geld ook voor de glitch. Ik heb hierdoor in de subversies (met kleine verbeteringen) Heftigere kleuren gebruikt en een grotere glitch.
 
 ## Derde versie (testen)
-In de derde versie heb ik naast de vergrote glitch ook een paar spans aangepast. Tijdens het testen en de feedback ronde kwam naar voren dat de caps die ik op de glitch heb aangebracht schreeuwerig overkwam en dat ik over het algemeen de tekst heb gestyled naar aanleiding van de betekenis daarvan meer dan hoe het wordt overgebracht. Ook vond ik zelf dat ik de geluiden niet genoeg heb gevisualiseerd. Daarnaast ontbrak het aan de details de tekst stak namelijk uit.
+In de derde versie heb ik naast de vergrote glitch ook een paar spans aangepast. Tijdens het testen en de feedback ronde kwam naar voren dat de caps die ik op de glitch heb aangebracht schreeuwerig overkwam en dat ik over het algemeen de tekst heb gestyled naar aanleiding van de betekenis daarvan meer dan hoe het wordt overgebracht. Ook vond ik zelf dat ik de geluiden niet genoeg heb gevisualiseerd. Daarnaast ontbrak het aan de details de tekst stak namelijk uit. Wat ook uit de feedback ronde kwam was dat de tekst waarbij ik de spacing dichterbij had gedaan en het woord cell dat 0.9em was te klein was voor Darice.
 
 ## Vierde versie
 In de vierde versie heb ik een 360 gemaakt. 
 
 Tekst:
-Al hoewel de glitch leuk was en erg leesbaar volgens Darice heb ik hem er toch uitgehaald, dit omdat de glitch als basis een witte tekst had en de hoofdpersoon ook. Ik wilde graag de witte kleur behouden voor de hoofdpersoon sinds hij in een neutrale stem praat en het wit goed afsteekt met het groen van mijn achtergrond. De glitch tekst is dus uiteindelijk verandert naar een opvallende groen binnen een box zodat dit duidelijk is.  
+Al hoewel de glitch leuk was en erg leesbaar volgens Darice heb ik hem er toch uitgehaald, dit omdat de glitch als basis een witte tekst had en de hoofdpersoon ook. Ik wilde graag de witte kleur behouden voor de hoofdpersoon sinds hij in een neutrale stem praat en het wit goed afsteekt met het groen van mijn achtergrond. De glitch tekst is dus uiteindelijk verandert naar een opvallende groen binnen een box zodat dit duidelijk is. Verder is de standaard font grote voor desktop 16px ik heb 18 gekozen om er zeker van te zijn dat het leesbaar is. 1 van de dingen die ik heb onthouden is dat uit het interview met Darice bleek dat ze de Matrix heel leuk vond, mijn design neemt ook elementen van de matrix mee. 
 
 Font: 
 Voice1: Voice1 Is erg een robot/computer geprogrammeerde stem, vaak zie je dat computers gebruik maken van het mono font deze heb ik dus ook gebruikt voor Voice1.
@@ -64,6 +64,8 @@ Voice4: Voor Voice4 heb ik ook het Brenner Sans font gebruikt om het consistent 
 
 Labels: Ik heb voor elke stem een label/titel aangemaakt zodat het extra duidelijk is wie wat zegt. Voor de computer-achtige stem heb ik een icoon van een computer gebruikt. Voor Voice4 heb ik de titel italic gemaakt om extra aan te duiden dat we niet weten wie het is. 
 
-Sounds: Alle geluiden die voorbij komen zijn achtergrond geluiden die de film opvullen, ik heb dus elementen binnen mijn achtergrond tot leven gewekt om geluid te visualiseren. In de eerste instantie wilde ik de bewegingen erg uitvergroten dit heb ik bewust niet gedaan met alles omdat Darice al haar aandacht moet verdelen en ik niet wil dat de overdreven bewegingen wegnemen van de captions en het beeld. Sommige gevisualiseerde bewegingen zoals bijvoorbeeld de pieptoon eind het eerste fragment zijn erg irritant als ze te erg worden uitvergroot omdat deze constant is en je aandacht daar dus steeds naar toe gaat.
+Sounds: Alle geluiden die voorbij komen zijn achtergrond geluiden die de film opvullen, ik heb dus elementen binnen mijn achtergrond tot leven gewekt om geluid te visualiseren. In de eerste instantie wilde ik de bewegingen erg uitvergroten dit heb ik bewust niet gedaan met alles omdat Darice al haar aandacht moet verdelen en ik niet wil dat de overdreven bewegingen wegnemen van de captions en het beeld. Sommige gevisualiseerde bewegingen zoals bijvoorbeeld de pieptoon eind het eerste fragment zijn erg irritant als ze te erg worden uitvergroot omdat deze constant is en je aandacht daar dus steeds naar toe gaat, maar ik wilde ze wel subtiel door laten gaan zodat Darice weet dat het geluid continue op de achtergrond aanwezig is.
+
+Verder heb ik als laatste toevoeging nog binnen de captions aangegeven wanneer welk geluid komt. Ik heb gekozen voor de kleur oranje omdat de geluiden die erin voorkomen er op heftige waarschuwings geluiden klinken.
 
 
